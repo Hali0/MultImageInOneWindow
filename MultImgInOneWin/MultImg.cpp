@@ -5,7 +5,7 @@
 #include "opencv2/opencv.hpp"  
 
 using namespace cv;
-
+using namespace std;
 int main()
 {
 	Mat left, right;
@@ -16,7 +16,7 @@ int main()
 
 	VideoCapture capleft(1);
 	VideoCapture capright(0);
-
+	cout << "Press Q to quit the program" << endl;
 	while (1)
 	{
 		capleft >> left;
